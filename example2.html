@@ -11,8 +11,10 @@
     <p>Some more example text…</p>
     <button onclick="displayResult()">Do not try this!</button>
     <script>
-      document.write("Hello from JavaScript");
+    function displayResult() {
+      document.getElementById("secondHeader").innerHTML = "It will overwrite the whole document";
     }
+    document.write("Hello from JavaScript");
     </script>
   </body>
 </html>
