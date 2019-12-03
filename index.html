@@ -2,6 +2,16 @@
 <html>
   <head>
     <title>JavaScript Example</title>
+    <style>
+      a {
+        background-color: green;
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+    </style>
   </head>
   <body>
     <h1>Using JavaScript to change the contents of an HTML element</h1>
@@ -11,8 +21,8 @@
     <p>Some more example text…</p>
     <button onclick="displayResult()">Change text</button>
     <div/>
-    <a style="display: inline-block;" href="https://wellingborough.github.io/jsexample/example2.html">Try using the document.write() method.</a>
-    <a style="display: inline-block;" href="https://wellingborough.github.io/jsexample/example3.html">Try using the window.alert() method.</a>
+    <a href="https://wellingborough.github.io/jsexample/example2.html">Try using the document.write() method.</a>
+    <a href="https://wellingborough.github.io/jsexample/example3.html">Try using the window.alert() method.</a>
     <script>
     function displayResult() {
       document.getElementById("secondHeader").innerHTML = "New Text";
