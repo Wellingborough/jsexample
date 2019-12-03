@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Example</title>
+    <style>
+      a {
+        font-family: Arial;
+        background-color: green;
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Using JavaScript to input values in a form</h1>
+    <h1 id="firstHeader">Part 1</h1>
+    <p>Some example text…</p>
+    <h1 id="secondHeader">Part 2</h1>
+    <p>Some more example text…</p>
+    <form name="personForm" action="https://wellingborough.github.io/jsexample/example5.html" onsubmit="return validateForm()" method="get">
+      First Name: <input type="text" name="firstName">
+      Surname: <input type="text" name="surname">
+      Age: <input type="text" name="age">
+      <input type="submit" value="Submit">
+    </form>
+    <div/>
+    <a href="https://wellingborough.github.io/jsexample/">Back to main example</a>
+    <script>
+    function validateForm() {
+      age = document.forms["personForm"]["age"].value;
+      text = "Hello from JavaScript";
+      // Check the value is a number, and between 0 and 150
+      if (isNaN(age) || age < 0 || age > 150) {
+        text = "Age not valid";
+      } else {
+        text = "That looks fine";
+      }
+      window.alert(text);
+    }
+    </script>
+  </body>
+</html>
