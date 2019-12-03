@@ -34,7 +34,7 @@
       age = document.forms["personForm"]["age"].value;
       text = "Hello from JavaScript";
       // Check the value is a number, and between 0 and 150
-      if (isNaN(age) || age < 0 || age > 150) {
+      if (isNaN(age) || age < 0 || age > 150 || age == "") {
         text = "Age not valid";
       } else {
         text = "That looks fine";
