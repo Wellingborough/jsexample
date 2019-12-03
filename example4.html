@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Example</title>
+    <style>
+      a {
+        font-family: Arial;
+        background-color: green;
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Using JavaScript to input a single value</h1>
+    <h1 id="firstHeader">Part 1</h1>
+    <p>Some example text…</p>
+    <h1 id="secondHeader">Part 2</h1>
+    <p>Some more example text…</p>
+    <button onclick="displayResult()">Show the alert box</button>
+    <div/>
+    <a href="https://wellingborough.github.io/jsexample/">Back to main example</a>
+    <script>
+    function checkAge() {
+      age = document.getElementById("age").value;
+      // Check the value is a number, and between 0 and 150
+      if (isNaN(age) || age < 0 || age > 150) {
+        text = "Age not valid";
+      } else {
+        text = "That looks fine";
+      }
+      window.alert(text);
+    }
+    </script>
+  </body>
+</html>
