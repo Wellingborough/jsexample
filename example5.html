@@ -39,7 +39,7 @@
     <a href="https://wellingborough.github.io/jsexample/">Back to main example</a>
     <script>
     function validateForm() {
-      age = document.forms["personForm"]["age"].value;
+      var age = document.forms["personForm"]["age"].value;
       var text;
       // Check the value is a number, and between 0 and 150
       if (isNaN(age) || age < 0 || age > 150 || age == "") {
