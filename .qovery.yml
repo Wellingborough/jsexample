@@ -1,0 +1,11 @@
+---
+application:
+  name: "jsexample"
+  project: "headstart-2021"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-jsexample"
+  routes:
+  - application_name: "jsexample"
+    paths:
+    - "/*"
